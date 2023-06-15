@@ -11,4 +11,4 @@ This version committed better than RecyclerView version because of
 - use less memory
 - shorter runtime
 - more efficient
-- less import packages
+- import less packages
