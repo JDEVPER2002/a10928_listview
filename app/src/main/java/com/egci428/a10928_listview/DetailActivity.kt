@@ -1,15 +1,13 @@
-package com.egci428.a10140_listview
+package com.egci428.a10928_listview
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.Button
 import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
-import android.widget.Toolbar
 import kotlin.random.Random
 import com.google.gson.GsonBuilder
 import okhttp3.Call
@@ -83,17 +81,20 @@ class DetailActivity : AppCompatActivity() {
             })
         }
         pressButton.setOnClickListener {
-
-            if(pressButton.text.equals("Make a Wish")){
-                Toast.makeText(this,"Waiting", Toast.LENGTH_SHORT).show()
+            if (pressButton.text == "Make a Wish") {
+                Toast.makeText(this, "Waiting", Toast.LENGTH_SHORT).show()
                 fetchJson()
-            } else if(pressButton.text.equals("Save")){
 
-                var sndintent = Intent(this,MainActivity::class.java)
-                sndintent.putExtra("msg",message)
-                sndintent.putExtra("status",status)
-                sndintent.putExtra("date",date)
-                setResult(1,sndintent)
+                // Change the image to open_cookie
+                val imageView = findViewById<ImageView>(R.id.imageView)
+                imageView.setImageResource(R.drawable.opened_cookie)
+
+            } else if (pressButton.text == "Save") {
+                var sndintent = Intent(this, MainActivity::class.java)
+                sndintent.putExtra("msg", message)
+                sndintent.putExtra("status", status)
+                sndintent.putExtra("date", date)
+                setResult(1, sndintent)
                 finish()
             }
         }

@@ -1,7 +1,5 @@
-package com.egci428.a10140_listview
+package com.egci428.a10928_listview
 
-import android.app.Activity
-import android.content.ContentValues.TAG
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -9,7 +7,6 @@ import android.util.Log
 import android.widget.ImageButton
 import android.widget.ListView
 import androidx.appcompat.widget.Toolbar
-import okhttp3.Cookie
 
 class MainActivity : AppCompatActivity() {
 

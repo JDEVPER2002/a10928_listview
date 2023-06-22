@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'com.egci428.a10140_listview'
+    namespace 'com.egci428.a10928_listview'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.egci428.a10140_listview"
+        applicationId "com.egci428.a10928_listview"
         minSdk 33
         targetSdk 33
         versionCode 1
